@@ -368,9 +368,21 @@ Widget chancesOfRain(){
         children: [
           Text("Chances of Rain",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
           Row(
-            children: [Column(
+
+            children: [
+              SizedBox(width: 20,),Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: [Text("Heavy",style: TextStyle(color: Colors.grey,fontSize: 12,fontWeight: FontWeight.w600),)],
+              children: [Text("Heavy",style: TextStyle(color: Colors.grey,fontSize: 12,fontWeight: FontWeight.w600),),
+                SizedBox(height: 20,),
+                Text("Rainy",style: TextStyle(color: Colors.grey,fontSize: 12,fontWeight: FontWeight.w600),),
+                SizedBox(height: 20,),
+                Text("Rain",style: TextStyle(color: Colors.grey,fontSize: 12,fontWeight: FontWeight.w600),),
+                SizedBox(height: 20,),
+              ],
+            ),
+            Row(
+              children: [Image.asset("assets/sun.png"),Image.asset("assets/mon.png"),Image.asset("assets/tue.png"),Image.asset("assets/wed.png"),Image.asset("assets/thur.png"),Image.asset("assets/fri.png"),Image.asset("assets/sat.png")],
             )],
           ),
         ],
