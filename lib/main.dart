@@ -367,6 +367,7 @@ Widget chancesOfRain(){
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text("Chances of Rain",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+          SizedBox(height: 20,),
           Row(
 
             children: [
@@ -381,10 +382,30 @@ Widget chancesOfRain(){
                 SizedBox(height: 20,),
               ],
             ),
-            Row(
-              children: [Image.asset("assets/sun.png"),Image.asset("assets/mon.png"),Image.asset("assets/tue.png"),Image.asset("assets/wed.png"),Image.asset("assets/thur.png"),Image.asset("assets/fri.png"),Image.asset("assets/sat.png")],
+              SizedBox(width: 20),
+
+              Row(
+              children: [Image.asset("assets/sun.png"),SizedBox(width: 65,),Image.asset("assets/tue.png"),SizedBox(width: 25,),Image.asset("assets/wed.png"),SizedBox(width: 25,),Image.asset("assets/thur.png"),SizedBox(width: 25,),Image.asset("assets/fri.png"),SizedBox(width: 25,),Image.asset("assets/sat.png")],
             )],
           ),
+          Row(
+            children: [
+              SizedBox(width: 75,),
+              Text("Sun",style: TextStyle(color: Colors.grey,fontSize: 12,fontWeight: FontWeight.w600),),
+              SizedBox(width: 10,),
+              Text("Mon",style: TextStyle(color: Colors.grey,fontSize: 12,fontWeight: FontWeight.w600),),
+              SizedBox(width: 10,),
+              Text("Tue",style: TextStyle(color: Colors.grey,fontSize: 12,fontWeight: FontWeight.w600),),
+              SizedBox(width: 10,),
+              Text("Wed",style: TextStyle(color: Colors.grey,fontSize: 12,fontWeight: FontWeight.w600),),
+              SizedBox(width: 10,),
+              Text("Thur",style: TextStyle(color: Colors.grey,fontSize: 12,fontWeight: FontWeight.w600),),
+              SizedBox(width: 10,),
+              Text("Fri",style: TextStyle(color: Colors.grey,fontSize: 12,fontWeight: FontWeight.w600),),
+              SizedBox(width: 10,),
+              Text("Sat",style: TextStyle(color: Colors.grey,fontSize: 12,fontWeight: FontWeight.w600),)
+            ],
+          )
         ],
       ),
     );
